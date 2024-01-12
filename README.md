@@ -3,7 +3,6 @@
 * 主办单位：北京语言大学-信息科学学院-语言文化计算研究室
 * 组织者：邵艳秋，李炜
 * 负责人及联系方式：冯振冰blcu_lcclab@163.com
-* 联系人及联系方式：冯振冰blcu_lcclab@163.com
 
 ## 一、任务内容
 
@@ -20,7 +19,7 @@
 此任务需要识别文本中的事件触发词并标记它们的位置。触发词为最能代表事件发生的词语，一般为句中的谓语动词（其他句子成分皆可）。我们构建的数据集采用最简触发词原则[1]，触发词以单音节词为主。
 
 #### 子任务二：事件类型判别（Event Type Classification）                                                               
-我们构建了一个具有层级逻辑性的事件类型体系（见Classical Chinese Historical Event Schema.jsonl），此任务需要参考给定的事件类型体系，为每个触发词确定其所属的事件类型。
+我们构建了一个具有层级逻辑性的事件类型体系（详见 Schema 文件：[Classical Chinese Historical Event Schema.jsonl](https://github.com/NLPInBLCU/CHED2024/blob/main/Classical%20Chinese%20Historical%20Event%20Schema.jsonl)），此任务需要参考给定的事件类型体系，为每个触发词确定其所属的事件类型。
 
 <div align=center>
 <img width="211" alt="image" src="https://github.com/NLPInBLCU/CHED2024/assets/45780284/e64f13b7-c966-43d7-9c86-37e265b58f0f">
@@ -32,7 +31,6 @@
 
 ![schema](https://github.com/NLPInBLCU/CHED2024/assets/45780284/d03f4c4e-bbcf-4859-a47e-aaf093d94cec)
 
-详见 Schema 文件：[Classical Chinese Historical Event Schema.jsonl](https://github.com/NLPInBLCU/CHED2024/blob/main/Classical%20Chinese%20Historical%20Event%20Schema.jsonl)
 
 ## 二、 评测数据
 我们从《二十四史》中选取了13159句语料进行标注，最后构建出了包含8122个有效事件实例的数据集CHED，各史书以及训练集、验证集、测试集的数据分布如下表所示：
